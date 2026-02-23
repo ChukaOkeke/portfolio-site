@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -14,7 +14,7 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#expertise">Expertise</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -30,7 +30,7 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#expertise" onclick="toggleMenu()">Expertise</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -38,12 +38,15 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Chukwuka Okeke profile picture"/>
+        <img
+          src="./assets/profile-pic.png"
+          alt="Chukwuka Okeke profile picture"
+        />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Chukwuka Okeke</h1>
-        <p class="section__text__p2">Cloud Engineer</p>
+        <p class="section__text__p2">Cloud DevOps Engineer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -51,7 +54,10 @@
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button
+            class="btn btn-color-1"
+            onclick="location.href = './#contact'"
+          >
             Contact Info
           </button>
         </div>
@@ -60,13 +66,21 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/chukwuka-okeke'"
+            onclick="
+              location.href = 'https://www.linkedin.com/in/chukwuka-okeke'
+            "
           />
           <img
             src="./assets/github.png"
             alt="My GitHub profile"
             class="icon"
-            onclick="location.href='https://www.github.com/ChukaOkeke'"
+            onclick="location.href = 'https://www.github.com/ChukaOkeke'"
+          />
+          <img
+            src="./assets/medium.webp"
+            alt="My Medium profile"
+            class="icon"
+            onclick="location.href = 'https://medium.com/@chukaokeke'"
           />
         </div>
       </div>
@@ -86,26 +100,41 @@
           <div class="about-containers">
             <div class="details-container">
               <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Cloud Engineering</p>
-            </div>
-            <div class="details-container">
-              <img
                 src="./assets/education.png"
                 alt="Education icon"
                 class="icon"
               />
               <h3>Education</h3>
-              <p>B.Sc. Electrical & Electronic Engineering<br />M.Sc. Control Systems & Robotics</p>
+              <p>
+                B.Eng., Electrical & Electronics Engineering<br />Master,
+                DevOps: CI/CD, Automation & Monitoring
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/expertise.png"
+                alt="Expertise icon"
+                class="icon"
+              />
+              <h3>Certifications</h3>
+              <p>
+                Certified Kubernetes Administrator<br />AWS Certified Solutions
+                Architect - Associate<br />AWS Certified Cloud Practitioner
+              </p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              I enjoy engineering resilient cloud systems -- systems that are reliable, scalable, secure, cost-efficient, and maintainable. I have experience working with AWS, and I'm proficient in containerization and orchestration tools like Docker and Kubernetes, infrastructure as code tools like Terraform and CloudFormation, CI/CD tools like GitHub Actions, and observability tools like Prometheus and Grafana. I'm passionate about learning and continuously improving my skills to stay up-to-date with the latest trends in cloud computing. I also occasionally write on cloud computing and corporate finance.
+              I design, build, and operate resilient cloud-native systems —
+              systems that are reliable, scalable, and cost-efficient — with a
+              strong emphasis on automation and security. I have experience
+              working with AWS, and I am proficient in Infrastructure as Code
+              tools like Terraform and Ansible, Containerization & Orchestration
+              tools like Docker and Kubernetes, CI/CD tools like GitHub Actions
+              and ArgoCD, and Monitoring tools like Prometheus and Grafana. I
+              also occasionally write, mainly on Cloud DevOps and Corporate
+              Finance, on my
+              <a href="https://medium.com/@chukaokeke">Medium blog</a>.
             </p>
           </div>
         </div>
@@ -114,130 +143,160 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href = './#expertise'"
       />
     </section>
-    <section id="experience">
+    <section id="expertise">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
+      <h1 class="title">Expertise</h1>
+      <div class="expertise-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Cloud Engineering</h2>
+            <h2 class="expertise-sub-title">Cloud DevOps Engineering</h2>
             <div class="article-container">
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="Expertise icon"
                   class="icon"
                 />
                 <div>
                   <h3>AWS</h3>
-                  <p>Experienced</p>
                 </div>
               </article>
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="Expertise icon"
                   class="icon"
                 />
                 <div>
                   <h3>Kubernetes</h3>
-                  <p>Experienced</p>
                 </div>
               </article>
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="Expertise icon"
                   class="icon"
                 />
                 <div>
                   <h3>Terraform</h3>
-                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="Expertise icon"
                   class="icon"
                 />
                 <div>
                   <h3>GitHub Actions</h3>
-                  <p>Basic</p>
                 </div>
               </article>
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="Expertise icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Docker</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Expertise icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ArgoCD</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Expertise icon"
                   class="icon"
                 />
                 <div>
                   <h3>Prometheus</h3>
-                  <p>Basic</p>
                 </div>
               </article>
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="Expertise icon"
                   class="icon"
                 />
                 <div>
                   <h3>Grafana</h3>
-                  <p>Intermediate</p>
                 </div>
               </article>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Cloud Engineering</h2>
+            <h2 class="expertise-sub-title">Cloud DevOps Engineering</h2>
             <div class="article-container">
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="Expertise icon"
                   class="icon"
                 />
                 <div>
-                  <h3>Docker</h3>
-                  <p>Basic</p>
+                  <h3>Python</h3>
                 </div>
               </article>
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="Expertise icon"
                   class="icon"
                 />
                 <div>
                   <h3>Ansible</h3>
-                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="Expertise icon"
                   class="icon"
                 />
                 <div>
-                  <h3>Jenkins</h3>
-                  <p>Intermediate</p>
+                  <h3>Checkov</h3>
                 </div>
               </article>
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="Expertise icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Trivy</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Expertise icon"
                   class="icon"
                 />
                 <div>
                   <h3>Git</h3>
-                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Expertise icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Linux</h3>
                 </div>
               </article>
             </div>
@@ -248,13 +307,13 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#projects'"
+        onclick="location.href = './#projects'"
       />
     </section>
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
+      <div class="expertise-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
@@ -264,17 +323,17 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="expertise-sub-title project-title">Project One</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href = 'https://github.com/'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href = 'https://github.com/'"
               >
                 Live Demo
               </button>
@@ -288,17 +347,17 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="expertise-sub-title project-title">Project Two</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href = 'https://github.com/'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href = 'https://github.com/'"
               >
                 Live Demo
               </button>
@@ -312,17 +371,17 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="expertise-sub-title project-title">Secure Dockerized RESTful API</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href = 'https://github.com/ChukaOkeke/restaurant-api-docker'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href = 'https://github.com/'"
               >
                 Live Demo
               </button>
@@ -334,7 +393,7 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#contact'"
+        onclick="location.href = './#contact'"
       />
     </section>
     <section id="contact">
@@ -347,7 +406,9 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:chukaookeke@gmail.com">chukaookeke@gmail.com</a></p>
+          <p>
+            <a href="mailto:chukaookeke@gmail.com">chukaookeke@gmail.com</a>
+          </p>
         </div>
         <div class="contact-info-container">
           <img
@@ -355,7 +416,9 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com/in/chukwuka-okeke">LinkedIn</a></p>
+          <p>
+            <a href="https://www.linkedin.com/in/chukwuka-okeke">LinkedIn</a>
+          </p>
         </div>
       </div>
     </section>
@@ -364,13 +427,13 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#expertise">Expertise</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2025 Chukwuka Okeke. All Rights Reserved.</p>
+      <p>Copyright &#169; 2026 Chukwuka Okeke. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
